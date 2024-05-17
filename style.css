@@ -3,8 +3,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-image: url('./album covers/background.jpeg');
-    background-size: cover; /* Ensure the background image covers the entire background */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-position: center; 
     padding-bottom: 50px;
 }
 
@@ -12,8 +12,8 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
-    min-height: 100vh; /* Set minimum height to viewport height */
-    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    min-height: 100vh; 
+    overflow-y: auto; 
 }
 
 .header {
@@ -31,23 +31,23 @@ body {
     width: 200px;
     height: 50px;
     border-radius: 30px;
-    background-color: #1DB954; /* Default background color for green button */
+    background-color: #1DB954; 
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
     cursor: pointer;
-    font-size: 20px; /* Adjust font size as needed */
-    color: white; /* Set text color to white */
+    font-size: 20px; 
+    color: white; 
 }
 
 .button.green {
-    background-color: #1DB954; /* Green color for the first button */
+    background-color: #1DB954; 
     color: black;
 }
 
 .button.gray {
-    background-color: #808080; /* Gray color for the rest of the buttons */
+    background-color: #808080; 
 }
 
 .circle-button {
@@ -83,8 +83,8 @@ body {
 }
 
 .album-image {
-    width: 100px; /* Adjust the size as needed */
-    height: auto; /* Ensures the image maintains its aspect ratio */
+    width: 100px; 
+    height: auto; 
     margin-right: 20px;
 }
 
@@ -105,11 +105,11 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:  rgba(240, 240, 240, 0.8); /* Set the background color to blue */
+    background-color:  rgba(240, 240, 240, 0.8); 
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px; /* Add some padding for better appearance */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px 100px; 
+    box-sizing: border-box; 
 }
 
 .footer button {
@@ -119,18 +119,18 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    max-width: calc(33.33% - 20px); /* Set maximum width for each button to fit within the screen */
-    width: 100%; /* Ensure buttons take full available width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    max-width: calc(33.33% - 20px); 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .card-link {
     text-decoration: none;
-    color: inherit; /* Ensures text color remains unchanged */
+    color: inherit; 
 }
 
 .footer img {
-    width: 40px; /* Set the width of the image */
-    height: 40px; /* Set the height of the image */
+    width: 40px; 
+    height: 40px; 
     margin-right: 10px;
 }
