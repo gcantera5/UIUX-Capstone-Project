@@ -22,6 +22,8 @@
         <button id="shuffle-btn"><img src="./buttons/shuffle button.png" alt="shuffle button"></button>
     </div>
 
+    <input type="text" id="searchInput" placeholder="Search for a song..." style="display: none;">
+
     <div class="song-list" id="list">
         <div class="song-card">
             <div class="song-number">1</div>
@@ -37,7 +39,7 @@
         <a href="index.html">
             <img src="./buttons/home button.png" alt="Home">
         </a>
-        <img src="./buttons/search.png" alt="Search">
+        <button id="search-btn"><img src="./buttons/search.png" alt="search button"></button>
         <a href="liked-songs.html">
             <img src="./buttons/save button.png" alt="Saved">
         </a>
@@ -52,6 +54,16 @@
             shuffledSongs.forEach(song => {
                 songList.appendChild(song);
             });
+        });
+
+        document.getElementById("search-btn").addEventListener("click", function() {
+            var searchInput = document.getElementById("searchInput");
+            if (searchInput.style.display === "none") {
+                searchInput.style.display = "block";
+                searchInput.focus(); 
+            } else {
+                searchInput.style.display = "none";
+            }
         });
     </script>
 
