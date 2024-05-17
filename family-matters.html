@@ -19,10 +19,10 @@
 
     <div class="button-container">
         <img src="./buttons/play button.png" alt="play button">
-        <img src="./buttons/shuffle button.png" alt="shuffle button">
+        <button id="shuffle-btn"><img src="./buttons/shuffle button.png" alt="shuffle button"></button>
     </div>
 
-    <div class="song-list">
+    <div class="song-list" id="list">
         <div class="song-card">
             <div class="song-number">1</div>
             <div class="song-name">
@@ -42,5 +42,18 @@
             <img src="./buttons/save button.png" alt="Saved">
         </a>
     </div>
+
+    <script>
+        document.getElementById("shuffle-btn").addEventListener("click", function() {
+            var songList = document.getElementById("list");
+            var songs = songList.children;
+            var shuffledSongs = Array.from(songs).sort(() => Math.random() - 0.5);
+            songList.innerHTML = "";
+            shuffledSongs.forEach(song => {
+                songList.appendChild(song);
+            });
+        });
+    </script>
+    
 </body>
 </html>

@@ -134,3 +134,10 @@ header {
     height: 40px; 
     margin-right: 10px;
 }
+
+#shuffle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
