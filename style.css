@@ -5,6 +5,7 @@ body {
     background-image: url('./album covers/background.jpeg');
     background-size: cover; /* Ensure the background image covers the entire background */
     background-position: center; /* Center the background image */
+    padding-bottom: 50px;
 }
 
 .container {
@@ -27,17 +28,22 @@ body {
 }
 
 .button {
-    width: 200px; /* Increased width */
+    width: 200px;
     height: 50px;
-    border-radius: 30px; /* Oval shape */
-    background-color: #1DB954;
-    display: inline-block;
+    border-radius: 30px;
+    background-color: #1DB954; /* Default background color for green button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
     cursor: pointer;
+    font-size: 20px; /* Adjust font size as needed */
+    color: white; /* Set text color to white */
 }
 
 .button.green {
     background-color: #1DB954; /* Green color for the first button */
+    color: black;
 }
 
 .button.gray {
@@ -48,9 +54,13 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #1DB954;
-    display: inline-block;
+    background-color:#78AAF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    font-size: 24px;
+    color: black; 
 }
 
 .card-container {
@@ -60,12 +70,10 @@ body {
     margin-bottom: 20px;
 }
 
-
 .card {
     display: flex;
     align-items: center;
-    /* background-color: #f0f0f0; */
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -94,10 +102,10 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black; /* Set the background color to blue */
+    background-color:  rgba(240, 240, 240, 0.8); /* Set the background color to blue */
     display: flex;
     justify-content: space-between;
-    padding: 20px; /* Add some padding for better appearance */
+    padding: 20px 100px; /* Add some padding for better appearance */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -116,4 +124,10 @@ body {
 .card-link {
     text-decoration: none;
     color: inherit; /* Ensures text color remains unchanged */
+}
+
+.footer img {
+    width: 40px; /* Set the width of the image */
+    height: 40px; /* Set the height of the image */
+    margin-right: 10px;
 }
