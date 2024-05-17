@@ -8,6 +8,8 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
+    min-height: 100vh; /* Set minimum height to viewport height */
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
 }
 
 .header {
@@ -55,11 +57,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* .card {
-    background-color: #f0f0f0;
-    padding: 40px;
-    border-radius: 10px;
-} */
 
 .card {
     display: flex;
@@ -109,4 +106,9 @@ body {
     max-width: calc(33.33% - 20px); /* Set maximum width for each button to fit within the screen */
     width: 100%; /* Ensure buttons take full available width */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit; /* Ensures text color remains unchanged */
 }
